@@ -21,17 +21,17 @@ module.exports = {
             const ping = interaction.options.getBoolean('ping');
             const role = interaction.options.getRole('role');
 
-            const argsEmbed = new MessageEmbed()
+            const embed = new MessageEmbed()
                 .setTitle(title)
                 .setDescription(desc)
                 .setColor(color)
 
-            if (img != null) if (img.startsWith('http')) argsEmbed.setThumbnail(img);
+            if (img != null) if (img.startsWith('http')) embed.setThumbnail(img);
 
             await interaction.deferReply();
             await interaction.deleteReply();
 
-            await interaction.channel.send({ embeds: [argsEmbed] });
+            await interaction.channel.send({ embeds: [embed] });
 
             if (ping) await interaction.channel.send({ content: '@everyone' });
 

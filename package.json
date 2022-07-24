@@ -1,6 +1,6 @@
 {
   "name": "evergood-bot",
-  "version": "1.0.0",
+  "version": "1.0.0-b",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "dependencies": {
     "@discordjs/builders": "^0.15.0",
     "@discordjs/rest": "^0.5.0",
+    "axios": "^0.27.2",
     "discord-api-types": "^0.34.0",
     "discord.js": "^13.8.0",
     "dotenv": "^16.0.1",
